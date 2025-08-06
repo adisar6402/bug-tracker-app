@@ -1,0 +1,86 @@
+import { Project, Task } from '../types';
+
+export const sampleProjects: Omit<Project, 'id' | 'created_at' | 'updated_at'>[] = [
+  {
+    name: 'Frontend Redesign',
+    description: 'Complete overhaul of the user interface with modern design principles and improved user experience.',
+    color: '#8B5CF6',
+    created_by: 'user-1',
+  },
+  {
+    name: 'API Integration',
+    description: 'Integrate third-party APIs for enhanced functionality and data synchronization.',
+    color: '#3B82F6',
+    created_by: 'user-1',
+  },
+  {
+    name: 'Mobile App Development',
+    description: 'Native mobile application development for iOS and Android platforms.',
+    color: '#10B981',
+    created_by: 'user-1',
+  },
+  {
+    name: 'Performance Optimization',
+    description: 'Optimize application performance, reduce load times, and improve overall efficiency.',
+    color: '#F59E0B',
+    created_by: 'user-1',
+  },
+];
+
+export const sampleTasks: Omit<Task, 'id' | 'created_at' | 'updated_at'>[] = [
+  {
+    title: 'Design new landing page',
+    description: 'Create wireframes and mockups for the new landing page with modern design principles.',
+    status: 'todo',
+    priority: 'high',
+    project_id: 'project-1',
+    created_by: 'user-1',
+    assignee_id: 'user-2',
+    deadline: '2024-02-15',
+    tags: ['design', 'ui', 'landing-page'],
+  },
+  {
+    title: 'Implement user authentication',
+    description: 'Set up secure user authentication system with JWT tokens and password hashing.',
+    status: 'in_progress',
+    priority: 'urgent',
+    project_id: 'project-1',
+    created_by: 'user-1',
+    assignee_id: 'user-1',
+    deadline: '2024-02-10',
+    tags: ['backend', 'auth', 'security'],
+  },
+  {
+    title: 'Fix responsive design issues',
+    description: 'Resolve layout problems on mobile devices and ensure proper responsive behavior.',
+    status: 'done',
+    priority: 'medium',
+    project_id: 'project-1',
+    created_by: 'user-1',
+    assignee_id: 'user-3',
+    deadline: '2024-02-05',
+    tags: ['frontend', 'responsive', 'css'],
+  },
+  {
+    title: 'Database optimization',
+    description: 'Optimize database queries and improve overall performance.',
+    status: 'todo',
+    priority: 'low',
+    project_id: 'project-2',
+    created_by: 'user-1',
+    assignee_id: 'user-2',
+    deadline: '2024-02-20',
+    tags: ['database', 'performance', 'optimization'],
+  },
+  {
+    title: 'API documentation',
+    description: 'Create comprehensive API documentation for developers.',
+    status: 'in_progress',
+    priority: 'medium',
+    project_id: 'project-2',
+    created_by: 'user-1',
+    assignee_id: 'user-1',
+    deadline: '2024-02-18',
+    tags: ['documentation', 'api'],
+  },
+];
